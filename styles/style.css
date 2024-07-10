@@ -172,6 +172,11 @@ section {
     list-style-type: disc;
 }
 
+.project-content li.no-disc {
+    list-style-type: none;
+    margin-top : 20px;
+}
+
 .project-content {
     display: flex;
     justify-content: center;
