@@ -4,16 +4,18 @@
         <title>Justine Tu - Portfolio</title>
         <link rel="icon" href="./lib/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./styles/reset.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
 
     <body>
-        <header>
+        <header class="text-center py-5">
             <h1>hello;</h1>
         </header>
 
-        <main>
-            <nav>
+        <main class="container">
+            <nav nav justify-content-center py-3>
                 <a href="#about-me">A propos de moi</a>
                 <a href="#education">Formation</a>
                 <a href="#projects">Projets</a>
@@ -23,10 +25,11 @@
 
             <section id="about-me">
                 <h2>A propos de moi</h2>
-                <div class="aboutme">
-                    <img src="./lib/img/moi.png" alt="me"/>
-                    <div>
-                        <!-- <h3>A propos de moi</h3> -->
+                <div class="row aboutme">
+                    <div class="col-md-3">
+                        <img class="img-fluid" src="./lib/img/moi.png" alt="me"/>
+                    </div>
+                    <div class="col-md-9">
                         <p>Je suis Justine Tu, future développeuse Web & Mobile en formation. Ayant récemment terminé un master en traitement automatique des langues, j'ai eu l'opportunité d'explorer des technologies web telles que HTML, CSS, Bootstrap, PHP, FastAPI, ainsi que des bases de JavaScript avec jQuery et AJAX. Cette découverte a suscité en moi un véritable intérêt pour le développement web, me poussant à approfondir mes connaissances et compétences dans ce domaine. Je suis donc à la recherche d’une alternance pour une durée de <span>18 mois</span>, au rythme de <span>3 semaines en entreprise et 1 semaine en école</span>, avec un démarrage en bootcamp de 10 semaines, à partir de <span>octobre 2024</span> au <a href="https://www.lereacteur.io/formation-alternance/concepteur-developpeur-applications/" target="_blank">Reacteur</a>.</p>
                     </div>
                 </div>
@@ -51,15 +54,16 @@
                 <h2>Projets</h2>
                 <p>Lors de mes études en Traitement Automatique des Langues, j'ai réalisé des sites en utilisant HTML5, CSS3 et JavaScript : </p>
 
-                <div class="project-content">
-                    <img src="./lib/img/jukenju.png" alt="site-jukenju"/>
-                    <div>
-                        <h3>Jukenju</h3>
+                <div class="project-content row">
+                    <div class="col-md-7">
+                        <img class="img-fluid" src="./lib/img/jukenju.png" alt="site-jukenju"/>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Jukenju Translation</h3>
                         <h4>Projet Full-Stack</h4>
                         <ul>
-                            <li>Identification de la langue</li>
-                            <li>Traduction</li>
-                            <li>Intégration d'un modèle </br> pré-entraîné</li>
+                            <li>Identification de la langue et traduction</li>
+                            <li>Intégration d'un modèle pré-entraîné</li>
                             <li>Mode clair / sombre</li>
                             <li>Responsive</li>
                             <li class="link-disc"><a href="https://github.com/tujustine/jukenju-translation" target="_blank">Lien Github</a></li>
@@ -67,9 +71,11 @@
                     </div>
                 </div>
 
-                <div class="project-content">
-                    <img src="./lib/img/chinoispasfun.png" alt="site-chinoispasfun"/>
-                    <div>
+                <div class="project-content row">
+                    <div class="col-md-7">
+                        <img class="img-fluid"  src="./lib/img/chinoispasfun.png" alt="site-chinoispasfun"/>
+                    </div>
+                    <div class="col-md-5">
                         <h3>chinois(pas)fun</h3>
                         <h4>Projet Full-Stack</h4>
                         <ul>
@@ -84,9 +90,11 @@
 
                 <p>Au cours de ma formation, je réaliserai plusieurs répliques d'applications Web et d'applications Mobiles :</p>
 
-                <div class="project-content">
-                    <img src="./lib/img/tripadvisor.png" alt="tripadvisor-home"/>
-                    <div>
+                <div class="project-content row">
+                    <div class="col-md-7">
+                        <img class="img-fluid" src="./lib/img/tripadvisor.png" alt="tripadvisor-home"/>
+                    </div>
+                    <div class="col-md-5">
                         <h3>Tripadvisor Web</h3>
                         <h4>Projet Front-End</h4>
                         <ul>
@@ -97,9 +105,11 @@
                 </div>
 
 
-                <div class="project-content">
-                    <img src="./lib/img/deliveroo.png" alt="deliveroo"/>
-                    <div>
+                <div class="project-content row">
+                    <div class="col-md-7">
+                        <img class="img-fluid" src="./lib/img/deliveroo.png" alt="deliveroo"/>
+                    </div>
+                    <div class="col-md-5">
                         <h3>Deliveroo Web</h3>
                         <h4>Projet Front-End</h4>
                         <ul>
@@ -109,9 +119,11 @@
                     </div>
                 </div>
 
-                <div class="project-content">
-                    <img src="./lib/img/vinted.png" alt="vinted"/>
-                    <div>
+                <div class="project-content row">
+                    <div class="col-md-7">
+                        <img class="img-fluid" src="./lib/img/vinted.png" alt="vinted"/>
+                    </div>
+                    <div class="col-md-5">
                         <h3>Vinted Web</h3>
                         <h4>Projet Full-Stack</h4>
                         <ul>
@@ -125,9 +137,11 @@
                     </div>
                 </div>
 
-                <div class="project-content">
-                    <img src="./lib/img/airbnb.png" alt="airbnb"/>
-                    <div>
+                <div class="project-content row">
+                    <div class="col-md-7">
+                        <img class="img-fluid" src="./lib/img/airbnb.png" alt="airbnb"/>
+                    </div>
+                    <div class="col-md-5">
                         <h3>Airbnb Mobile</h3>
                         <h4>Projet Full-Stack</h4>
                         <ul>
@@ -164,5 +178,6 @@
                 <a href="#top"><img src="./lib/img/to_top.png"/></a>
             </div>
         </footer>
+
     </body>
 </html> 
