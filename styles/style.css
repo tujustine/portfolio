@@ -172,9 +172,30 @@ section {
     list-style-type: disc;
 }
 
-.project-content li.no-disc {
+.project-content li.link-disc {
     list-style-type: none;
+    /* position du ::before par rapport à cet élément */
+    position: relative;
+    padding-left: 30px;
     margin-top : 20px;
+}
+
+.project-content li.link-disc::before {
+    /* création d'un élément vide avant <li> */
+    content: "";
+    /* positionne le pseudo-élément par rapport au <li> */
+    position: absolute; 
+    /* position à 0px à gauche du <li> */
+    left: 0;
+    /* position à 50% de la hauteur du <li> */
+    top: 50%;
+    /* ajuste la position pour le centrer verticalement par rapport au <li> */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../lib/img/lien.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .project-content {
